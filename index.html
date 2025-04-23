@@ -7,6 +7,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+      transition: all 0.3s ease-in-out;
+    }
+
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
@@ -46,15 +51,15 @@
     .packs {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
+      justify-content:center;
+      gap: 50px;
     }
 
     .pack {
       background: white;
       border-radius: 12px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-      padding: 25px;
+      padding: 45px;
       width: 300px;
       transition: transform 0.3s ease;
     }
@@ -95,29 +100,29 @@
       background: #0039a6;
     }
 
-    .custom-need {
-      margin-top: 70px;
+    .custom-pack, .custom-need {
       background: #ffffff;
       border-radius: 12px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.08);
       padding: 40px 30px;
+      margin-top: 70px;
       text-align: center;
     }
 
-    .custom-need h2 {
+    .custom-pack h2, .custom-need h2 {
       color: #0052d4;
       font-size: 1.8em;
       margin-bottom: 15px;
     }
 
-    .custom-need p {
+    .custom-pack p, .custom-need p {
       font-size: 1.1em;
       max-width: 800px;
       margin: auto;
       line-height: 1.6;
     }
 
-    .custom-need a {
+    .custom-pack a, .custom-need a {
       display: inline-block;
       background: #25D366;
       color: white;
@@ -129,7 +134,7 @@
       transition: background 0.3s ease;
     }
 
-    .custom-need a:hover {
+    .custom-pack a:hover, .custom-need a:hover {
       background: #1ebe5d;
     }
 
@@ -195,10 +200,11 @@
       <div class="pack" data-aos="zoom-in">
         <h2>Starter Boost – 20 000 FCFA</h2>
         <ul>
-          <li>Diagnostic rapide</li>
-          <li>Nettoyage fichiers inutiles</li>
+          <li>Nettoyage intérieur et dépoussiérage des composants</li>
+          <li>Nettoyage des fichiers ralentissants</li>
+          <li>Mise à jour des pilotes</li>
           <li>Mise à jour système</li>
-          <li>Optimisation démarrage</li>
+          <li>Optimisation du démarrage</li>
         </ul>
         <button onclick="window.open('https://wa.me/2290166733958?text=Salut%20FIXXPERT%2C%20je%20veux%20le%20pack%20Starter%20Boost')">Réserver</button>
       </div>
@@ -207,9 +213,8 @@
         <h2>Performance Plus – 35 000 FCFA</h2>
         <ul>
           <li>Tout du pack Starter Boost</li>
-          <li>Formatage complet</li>
-          <li>Réinstallation OS + pilotes</li>
-          <li>Installation logiciels essentiels</li>
+          <li>Conservation des données et formatage complet</li>
+          <li>Réinstallation OS</li>
         </ul>
         <button onclick="window.open('https://wa.me/2290166733958?text=Salut%20FIXXPERT%2C%20je%20veux%20le%20pack%20Performance%20Plus')">Réserver</button>
       </div>
@@ -220,10 +225,16 @@
           <li>Tout du pack Performance Plus</li>
           <li>Antivirus + VPN</li>
           <li>Protection réseau</li>
-          <li>1 assistance à distance/mois</li>
+          <li>Assistance à distance / mois</li>
         </ul>
         <button onclick="window.open('https://wa.me/2290166733958?text=Salut%20FIXXPERT%2C%20je%20veux%20le%20pack%20Elite%20Protection')">Réserver</button>
       </div>
+    </div>
+
+    <div class="custom-pack" data-aos="fade-left">
+      <h2>Aucun pack ne correspond à votre besoin ?</h2>
+      <p>Vous avez un souci unique ou un besoin différent ? Expliquez-nous directement votre problème, et nous vous proposerons une solution adaptée.</p>
+      <a href="https://wa.me/2290166733958?text=Bonjour%20FIXXPERT%2C%20j%E2%80%99ai%20un%20besoin%20sp%C3%A9cifique%20qui%20ne%20correspond%20%C3%A0%20aucun%20pack">Décrire mon besoin</a>
     </div>
 
     <div class="custom-need" data-aos="fade-right">
@@ -243,6 +254,7 @@
 
   <footer data-aos="fade-up">
     &copy; 2025 FIXXPERT - Service Premium de Maintenance Informatique à Cotonou
+    <p>Landing page by Eddy</p>
   </footer>
 
   <!-- AOS JS -->
