@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FIXXPERT - Boostez votre Mac ou PC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fb;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0052d4, #4364f7, #6fb1fc);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 300px;
+      margin-bottom: 15px;
+
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .packs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .pack {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      padding: 25px;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .pack:hover {
+      transform: scale(1.03);
+    }
+
+    .pack h2 {
+      font-size: 1.5em;
+      color: #0052d4;
+    }
+
+    .pack ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .pack ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .pack button {
+      margin-top: 15px;
+      background: #0052d4;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+
+    .pack button:hover {
+      background: #0039a6;
+    }
+
+    .custom-need {
+      margin-top: 70px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    .custom-need h2 {
+      color: #0052d4;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+
+    .custom-need p {
+      font-size: 1.1em;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .custom-need a {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .custom-need a:hover {
+      background: #1ebe5d;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .cta a {
+      background: #25D366;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #1ebe5d;
+    }
+
+    footer {
+      text-align: center;
+      background: #f0f0f0;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .social img {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .packs {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="fixxpert-logo.png" alt="FIXXPERT Logo" />
+    <h1>Optimisez Votre Mac ou PC en Un Clic</h1>
+    <p>Maintenance experte rapide – à domicile ou à distance, par FIXXPERT</p>
+  </header>
+
+  <section>
+    <h2 style="text-align:center;">Nos Packs de Maintenance</h2>
+    <div class="packs">
+      <div class="pack">
+        <h2>Starter Boost – 20 000 FCFA</h2>
+        <ul>
+          <li>Diagnostic rapide</li>
+          <li>Nettoyage interne de l'ordinateur</li>
+          <li>Nettoyage des fichiers temporaires du système</li>
+          <li>Mise à jour système</li>
+          <li>Optimisation démarrage</li>
+        </ul>
+        <button onclick="window.open('https://wa.me/2290166733958?text=Salut%20FIXXPERT%2C%20je%20veux%20le%20pack%20Starter%20Boost')">Réserver</button>
+      </div>
+
+      <div class="pack">
+        <h2>Performance Plus – 35 000 FCFA</h2>
+        <ul>
+          <li>Pack Starter Boost</li>
+          <li>Formatage complet + conservation des données client</li>
+          <li>Réinstallation OS + pilotes</li>
+          <li>Installation logiciels essentiels</li>
+        </ul>
+        <button onclick="window.open('https://wa.me/2290166733958?text=Salut%20FIXXPERT%2C%20je%20veux%20le%20pack%20Performance%20Plus')">Réserver</button>
+      </div>
+
+      <div class="pack">
+        <h2>Elite Protection – 55 000 FCFA</h2>
+        <ul>
+          <li>Pack Performance Plus</li>
+          <li>Antivirus + VPN</li>
+          <li>Protection réseau</li>
+          <li>Assistance à distance/mois</li>
+        </ul>
+        <button onclick="window.open('https://wa.me/2290166733958?text=Salut%20FIXXPERT%2C%20je%20veux%20le%20pack%20Elite%20Protection')">Réserver</button>
+      </div>
+    </div>
+
+    <div class="custom-need">
+      <h2>Un besoin spécifique ? Un achat de matériel informatique à faire ?</h2>
+      <p>
+        Vous cherchez un accessoire, un ordinateur ou vous avez un souci particulier qui ne correspond à aucun pack ?
+        <br/>Nous vous accompagnons pour tout besoin personnalisé, sans engagement.
+      </p>
+      <a href="https://wa.me/2290166733958?text=Salut%20FIXXPERT%2C%20j%E2%80%99ai%20un%20besoin%20personnalis%C3%A9">Envoyer mon besoin</a>
+    </div>
+
+    <div class="cta">
+      <h3>Votre machine mérite le top. Prêt ?</h3>
+      <a href="https://wa.me/2290166733958" target="_blank">Contacter via WhatsApp</a>
+
+      <div class="social">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+        <span>@eddy_khn</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 FIXXPERT - Service Premium de Maintenance Informatique à Cotonou
+    <p>Landing page created by Eddy.</p>
+  </footer>
+
+</body>
+</html>
